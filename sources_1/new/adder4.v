@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: XAUT_IC
+// Engineer: CBX1997
 // 
 // Create Date: 2020/06/22 23:44:21
 // Design Name: 
@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description:  a 4bit adder
 // 
 // Dependencies: 
 // 
