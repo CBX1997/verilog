@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: A 1 out of 4 data selector
 // 
 // Dependencies: 
 // 
