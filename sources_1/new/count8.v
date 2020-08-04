@@ -29,7 +29,9 @@ module count8(
               );
               
 input [7:0]  data;
-input load,clk,rst;
+input load,
+			clk,
+			rst;
 
 output [7:0] out;
 
@@ -37,8 +39,11 @@ output [7:0] out;
 reg[7:0] out;
 always @(posedge clk)
       begin
-      	if(!rst) out <= 8'00;
-      	else if(load) out <= data;
-      	else out<=out+1;
+      	if(!rst) 
+      		out<=8'00;
+      	else if(load) 
+      		out<=data;
+      	else 
+      		out<=out+1;
       end
 endmodule
