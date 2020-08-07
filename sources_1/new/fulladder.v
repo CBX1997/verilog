@@ -26,10 +26,10 @@ module halfadder(
 		c
 );
 input  a,
-			 b;
+	   b;
 			 
 output c,
-			 s;
+	   s;
 			 
 assign s=a^b;
 assign c=a&b;
@@ -43,15 +43,15 @@ module fulladder(
     );
     
 input  p,
-			 q,
-			 ci;
+	   q,
+	   ci;
 			 
 output co,
-			 sum;
+	   sum;
 			 
    wire w1,
-		    w2,
-		    w3;
+		w2,
+		w3;
    halfadder U1(p,q,w1,w2);
    halfadder U2(ci,w1,sum,w3);
    or U3(co,w2,w3)		 						    
