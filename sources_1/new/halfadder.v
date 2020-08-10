@@ -42,5 +42,22 @@ module fulladder(p,q,ci,co,sum);
 	 	halfadder  U2(ci,w1,sum,w3);
 	 	or#or_delay U3(co,w2,w3);
 endmodule
-	
+module top1(top1a,top1b,top1s,top1c);//修改半加器模块参数的模块top1
+	input top1a,top1b;
+	output top1s,top1c;
+		defparam	U1.xor_delay=4;
+		 			U1.and_delay=5;	
+	//名为U1的半加器实例中对参数xor_delay和参数and_delay值的修改
+	halfadder U1(top1a,top1b,top1s,top1c);		 		
 endmodule
+module top2(top2p,top2q,top2ci,top2co,top2sum);
+	input top2p,top2q,top2ci;
+	output top2co,top2sum;
+		defparam	U2.U1.xor_delay=6;
+		 			U2.U2.and_delay=7;
+	//名为U2的全加器实例中对参数or_delay值的修改
+	//参数and_delay值的修改
+		U2.or_delay=5;
+	//名为U2的全加器实例中对参数or_delay值的修改
+	fulladder U2(top2p,top2q,top2ci,topco,top2sum);
+endmodule				 			
