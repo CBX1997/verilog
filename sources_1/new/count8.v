@@ -25,11 +25,11 @@ module count8(
 							rst,
 							out,
 							data,
-							load
+							load//½øÎ»ĞÅºÅ
               );
               
 input [7:0]  data;
-input load,
+input 		load,
 			clk,
 			rst;
 
