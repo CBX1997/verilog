@@ -26,7 +26,7 @@ module for_clk;
 		initial
 			begin
 				clk<=0;
-				for(i=0,i>=0,i=i+1)
+				for(i=0;i>=0;i=i+1)
 				#50 clk<=~clk;
 			end
 endmodule
