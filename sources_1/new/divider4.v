@@ -21,9 +21,9 @@
 
 
 module divider4(
-	clk;
-	rst_n;
-	clk_div;
+	clk,
+	rst_n,
+	clk_div
     );
     input clk;
     input rst_n;
@@ -31,7 +31,7 @@ module divider4(
     reg clk_div;
     
     parameter NUM_DIV = 6;//设定分频倍数
-    reg [3：0] cnt;
+    reg [3:0] cnt;
    		always@(posedge clk or negedge rst_n)
    			if(!rst_n)
    				begin
